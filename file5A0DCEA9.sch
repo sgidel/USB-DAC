@@ -1,40 +1,9 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:dacparts
-LIBS:USB-DAC-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -45,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L DRV135 U17
+L dacparts:DRV135 U17
 U 1 1 5A0DE5A6
 P 5500 2250
 F 0 "U17" H 5500 2300 60  0000 C CNN
@@ -57,7 +26,7 @@ F 4 "DRV135UA/2K5" H 5500 2250 60  0001 C CNN "mpn"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C63
+L Device:C_Small C63
 U 1 1 5A0DE762
 P 4750 2000
 F 0 "C63" H 4760 2070 50  0000 L CNN
@@ -68,7 +37,7 @@ F 3 "" H 4750 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C64
+L Device:C_Small C64
 U 1 1 5A0DE81E
 P 4750 2400
 F 0 "C64" H 4760 2470 50  0000 L CNN
@@ -79,15 +48,15 @@ F 3 "" H 4750 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2400 5000 2550
+	5000 2400 5000 2500
 Wire Wire Line
 	5000 2500 4750 2500
 Wire Wire Line
-	4450 2300 5000 2300
+	4450 2300 4750 2300
 Wire Wire Line
 	4750 1900 5000 1900
 Wire Wire Line
-	5000 1850 5000 2100
+	5000 1850 5000 1900
 Wire Wire Line
 	4750 2100 4750 2300
 Text HLabel 4950 2200 0    60   Input ~ 0
@@ -99,7 +68,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 2300 5950 2400
 $Comp
-L GND #PWR041
+L power:GND #PWR041
 U 1 1 5A0DE91C
 P 4450 2350
 F 0 "#PWR041" H 4450 2100 50  0001 C CNN
@@ -113,7 +82,7 @@ Wire Wire Line
 	4450 2350 4450 2300
 Connection ~ 4750 2300
 $Comp
-L +15V #PWR042
+L power:+15V #PWR042
 U 1 1 5A0DE955
 P 5000 1850
 F 0 "#PWR042" H 5000 1700 50  0001 C CNN
@@ -124,7 +93,7 @@ F 3 "" H 5000 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12VA #PWR043
+L power:-12VA #PWR043
 U 1 1 5A0DE975
 P 5000 2550
 F 0 "#PWR043" H 5000 2400 50  0001 C CNN
@@ -141,7 +110,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 2100 6350 2100
 $Comp
-L DRV135 U18
+L dacparts:DRV135 U18
 U 1 1 5A0DEC40
 P 5500 3450
 F 0 "U18" H 5500 3500 60  0000 C CNN
@@ -152,7 +121,7 @@ F 3 "" H 5500 3450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C65
+L Device:C_Small C65
 U 1 1 5A0DEC4C
 P 4750 3200
 F 0 "C65" H 4760 3270 50  0000 L CNN
@@ -163,7 +132,7 @@ F 3 "" H 4750 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C66
+L Device:C_Small C66
 U 1 1 5A0DEC52
 P 4750 3600
 F 0 "C66" H 4760 3670 50  0000 L CNN
@@ -174,15 +143,15 @@ F 3 "" H 4750 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 3600 5000 3750
+	5000 3600 5000 3700
 Wire Wire Line
 	5000 3700 4750 3700
 Wire Wire Line
-	4450 3500 5000 3500
+	4450 3500 4750 3500
 Wire Wire Line
 	4750 3100 5000 3100
 Wire Wire Line
-	5000 3050 5000 3300
+	5000 3050 5000 3100
 Wire Wire Line
 	4750 3300 4750 3500
 Text HLabel 4950 3400 0    60   Input ~ 0
@@ -194,7 +163,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 3500 5950 3600
 $Comp
-L GND #PWR044
+L power:GND #PWR044
 U 1 1 5A0DEC62
 P 4450 3550
 F 0 "#PWR044" H 4450 3300 50  0001 C CNN
@@ -208,7 +177,7 @@ Wire Wire Line
 	4450 3550 4450 3500
 Connection ~ 4750 3500
 $Comp
-L +15V #PWR045
+L power:+15V #PWR045
 U 1 1 5A0DEC6A
 P 5000 3050
 F 0 "#PWR045" H 5000 2900 50  0001 C CNN
@@ -219,7 +188,7 @@ F 3 "" H 5000 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -12VA #PWR046
+L power:-12VA #PWR046
 U 1 1 5A0DEC70
 P 5000 3750
 F 0 "#PWR046" H 5000 3600 50  0001 C CNN
@@ -236,33 +205,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 3300 6150 3300
 $Comp
-L JACK_TRS_6PINS J5
-U 1 1 5A340C41
-P 7150 2300
-AR Path="/5A0DCEAA/5A340C41" Ref="J5"  Part="1" 
-AR Path="/59E908E3/5A340C41" Ref="J5"  Part="1" 
-F 0 "J5" H 7150 2700 50  0000 C CNN
-F 1 "JACK_TRS_6PINS" H 7100 2000 50  0000 C CNN
-F 2 "Connectors:NMJ6HCD2" H 7250 2150 50  0001 C CNN
-F 3 "" H 7250 2150 50  0001 C CNN
-F 4 "ACJS-MHOM" H 7150 2300 60  0001 C CNN "mpn"
-	1    7150 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L JACK_TRS_6PINS J4
-U 1 1 5A340CC5
-P 7050 3500
-F 0 "J4" H 7050 3900 50  0000 C CNN
-F 1 "JACK_TRS_6PINS" H 7000 3200 50  0000 C CNN
-F 2 "Connectors:NMJ6HCD2" H 7150 3350 50  0001 C CNN
-F 3 "" H 7150 3350 50  0001 C CNN
-F 4 "ACJS-MHOM" H 7050 3500 60  0001 C CNN "mpn"
-	1    7050 3500
-	-1   0    0    1   
-$EndComp
-$Comp
-L GND #PWR047
+L power:GND #PWR047
 U 1 1 5A340D6C
 P 6550 2550
 F 0 "#PWR047" H 6550 2300 50  0001 C CNN
@@ -275,14 +218,14 @@ $EndComp
 Wire Wire Line
 	6550 2550 6550 2500
 Wire Wire Line
-	6550 2500 6750 2500
+	6550 2500 6700 2500
 Wire Wire Line
 	6750 2600 6700 2600
 Wire Wire Line
 	6700 2600 6700 2500
 Connection ~ 6700 2500
 $Comp
-L GND #PWR048
+L power:GND #PWR048
 U 1 1 5A340E0A
 P 6600 3850
 F 0 "#PWR048" H 6600 3600 50  0001 C CNN
@@ -293,7 +236,7 @@ F 3 "" H 6600 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 3850 6600 3700
+	6600 3850 6600 3800
 Wire Wire Line
 	6600 3700 6650 3700
 Wire Wire Line
@@ -315,4 +258,42 @@ Wire Wire Line
 	6550 2400 6550 2100
 Wire Wire Line
 	6550 2100 6750 2100
+Wire Wire Line
+	4750 2300 5000 2300
+Wire Wire Line
+	5000 2500 5000 2550
+Wire Wire Line
+	5000 1900 5000 2100
+Wire Wire Line
+	4750 3500 5000 3500
+Wire Wire Line
+	5000 3700 5000 3750
+Wire Wire Line
+	5000 3100 5000 3300
+Wire Wire Line
+	6700 2500 6750 2500
+Wire Wire Line
+	6600 3800 6600 3700
+$Comp
+L Connector_Specialized:Audio-Jack-3_3Switches J5
+U 1 1 5A80B063
+P 6950 2400
+F 0 "J5" H 6717 2320 50  0000 R CNN
+F 1 "Audio-Jack-3_3Switches" H 6717 2411 50  0000 R CNN
+F 2 "Connectors:NMJ6HCD2" H 7200 2500 50  0001 C CNN
+F 3 "~" H 7200 2500 50  0001 C CNN
+	1    6950 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Specialized:Audio-Jack-3_3Switches J4
+U 1 1 5A80B1AF
+P 6850 3600
+F 0 "J4" H 6617 3520 50  0000 R CNN
+F 1 "Audio-Jack-3_3Switches" H 6617 3611 50  0000 R CNN
+F 2 "Connectors:NMJ6HCD2" H 7100 3700 50  0001 C CNN
+F 3 "~" H 7100 3700 50  0001 C CNN
+	1    6850 3600
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

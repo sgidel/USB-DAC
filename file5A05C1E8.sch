@@ -119,7 +119,7 @@ F 3 "" H 5750 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L Device:C_Small C?
 U 1 1 5A05C39F
 P 6100 2750
 F 0 "C?" H 6110 2820 50  0000 L CNN
@@ -130,7 +130,7 @@ F 3 "" H 6100 2750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L C_Small C?
+L Device:C_Small C?
 U 1 1 5A05C3E3
 P 6650 2750
 F 0 "C?" H 6660 2820 50  0000 L CNN
@@ -185,7 +185,7 @@ F 3 "" H 7050 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C?
+L Device:C_Small C?
 U 1 1 5A05D8CA
 P 5350 2800
 F 0 "C?" H 5360 2870 50  0000 L CNN

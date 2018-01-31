@@ -1,36 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:dacparts
-LIBS:USB-DAC-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -89,7 +58,7 @@ F2 "LIN" I L 5100 2850 60
 F3 "RIN" I L 5100 3150 60 
 $EndSheet
 $Comp
-L POT_Dual RV1
+L Device:POT_Dual RV1
 U 1 1 5A0F0848
 P 4400 2150
 F 0 "RV1" H 4400 2300 50  0000 C CNN
@@ -103,11 +72,11 @@ $EndComp
 Wire Wire Line
 	4200 2250 4300 2250
 Wire Wire Line
-	4200 1500 4200 2250
+	4200 1500 4200 1750
 Wire Wire Line
 	4200 1750 4300 1750
 $Comp
-L GND #PWR01
+L power:GND #PWR01
 U 1 1 5A0F0FC7
 P 4300 1500
 F 0 "#PWR01" H 4300 1250 50  0001 C CNN
@@ -133,7 +102,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 2550 4300 2550
 Wire Wire Line
-	4500 1900 5100 1900
+	4500 1900 4900 1900
 Wire Wire Line
 	4900 1900 4900 2850
 Wire Wire Line
@@ -141,7 +110,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 2200 5000 2200
 Wire Wire Line
-	5000 2200 5000 3150
+	5000 2200 5000 2400
 Wire Wire Line
 	5000 3150 5100 3150
 Connection ~ 4900 1900
@@ -159,4 +128,10 @@ F4 "DOUT" O R 2700 2150 60
 F5 "BCLK" O R 2700 1950 60 
 F6 "~RST" I R 2700 2250 60 
 $EndSheet
+Wire Wire Line
+	4200 1750 4200 2250
+Wire Wire Line
+	4900 1900 5100 1900
+Wire Wire Line
+	5000 2400 5000 3150
 $EndSCHEMATC

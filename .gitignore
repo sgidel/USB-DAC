@@ -1,6 +1,6 @@
 # temp files
 *.bak
 *.kicad_pcb-bak
-
+*.back
 # for external tools
 *.dsn
