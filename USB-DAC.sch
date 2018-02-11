@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:USB-DAC-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -134,4 +135,5 @@ Wire Wire Line
 	4900 1900 5100 1900
 Wire Wire Line
 	5000 2400 5000 3150
+NoConn ~ 5300 8050
 $EndSCHEMATC
